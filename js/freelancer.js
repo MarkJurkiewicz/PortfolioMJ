@@ -35,3 +35,8 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+$(window).load(function() {
+    $('.name').animate({
+        'marginLeft' : "+50px" //moves left
+    });
+});
