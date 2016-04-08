@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require_once('/var/www/html/PortfolioMJ/mail/contact_me.php');
+require_once('/var/www/html/PortfolioMJ/mail/email_config.php');
 require('PHPMailerAutoload.php');
 $mail = new PHPMailer();
 $mail->SMTPDebug = 3;                               // Enable verbose debug output
