@@ -1,7 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require_once('email_config.php');
+$constants = parse_ini_file("/var/www/html/mailer.ini");
+//require_once('email_config.php');
 require('PHPMailerAutoload.php');
 $mail = new PHPMailer();
 $mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -11,8 +12,8 @@ $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 
 
-$mail->Username = EMAIL_USER;                  // SMTP username
-$mail->Password = EMAIL_PASS;                 // SMTP password
+$mail->Username = $constants['username'];                  // SMTP username
+$mail->Password = $constants['password'];                 // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 $options = array(
