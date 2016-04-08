@@ -36,11 +36,6 @@ $mail->addReplyTo($_POST['email'], $_POST['name']);
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Someone has contacted you from your website.';
-
-//$mail->Body    = '<h3>' . "Name:" .  '</h3>' . '<h3>' . $_POST['name'] . '</h3>' . '<br>' .
-//    '<h3>' . "Email: " . '</h3>' . '<h3>' . $_POST['email'] . '</h3>' .  '<br>' .
-//    '<h3>' . "Phone: " . '</h3>' . '<h3>' . $_POST['phone'] . '</h3>' .  '<br>' .
-//    '<h3>' . "Message: " . '</h3>' . '<h3>' . $_POST['message'] . '</h3>' ;
 $stuff = '';
 foreach($_POST as $key=>$value){
     $stuff .= "<h3>$key : $value</h3>";
