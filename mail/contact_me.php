@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 //require_once('email_config.php');
 require('PHPMailerAutoload.php');
-$constants = parse_ini_file('/var/www/html/mailer.ini', true);
+$constants = parse_ini_file('/var/www/html/mail.ini', true);
 $mail = new PHPMailer();
 $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
