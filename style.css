@@ -75,7 +75,7 @@ section.success {
     height: 300px;
     width: 300px;
     -webkit-filter: sepia(.75);
-    -moz-filter: sepia(.75);
+    filter: sepia(.75);
 }
 
 
