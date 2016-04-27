@@ -36,11 +36,6 @@
 }
 
 
-@font-face {
-    font-family: Grotesk-Regular;
-    src: url(images/HKGrotesk-Regular.otf);
-}
-
 #skills {
     background-color: darkorange;
 }
