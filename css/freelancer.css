@@ -29,8 +29,12 @@ h3{
     cursor: default;
     font-weight: bolder;
 }
-
 h1,
+h2,
+h3{
+    cursor:default;
+}
+/*h1,*/
 /*h2,*/
 /*h3,*/
 h4,

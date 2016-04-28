@@ -82,4 +82,17 @@ section.success {
     justify-content: space-between;
 }
 
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 2%;
+}
 
+.border:hover
+{
+    box-shadow: inset 0 0 0 25px #53a7ea;
+
+}
