@@ -36,5 +36,15 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 $(function () {  //doc ready
-    $('h1').slideDown(1500);
+    $(window).scroll(function() {
+        $('.skills1').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("bigExpand");
+            }
+        });
+    });
 });
+
