@@ -256,3 +256,7 @@ slideRight
         opacity: 1;
     }
 }
+
+#skills {
+    word-spacing: .5em;
+}
